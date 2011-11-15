@@ -1,0 +1,6 @@
+#!/usr/bin/php
+<?php
+include('sparklineclass.php');
+unset($argv[0]);
+$spark = new sparklineclass();
+echo $spark->render(explode(",",implode("",$argv)))."\n";
